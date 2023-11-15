@@ -49,6 +49,15 @@
               <a class="nav-link header-nav__link fw-medium text-uppercase" href="contact.html">Contact</a>
             </li>
           </ul>
+          <div class="header-search">
+            <input type="text" class="shadow-sm" name="search" id="search" placeholder="Type Something...">
+            <div class="search-icon">
+              <i class="bi bi-search fw-bold"></i>
+            </div>
+            <div class="close-icon">
+              <i class="bi bi-x-lg fw-bold"></i>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -218,6 +227,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+
+  <script>
+    const headerSearch = document.querySelector(".header-search");
+    const searchIcon = document.querySelector(".search-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
+    searchIcon.onclick = () => {
+      headerSearch.classList.add("search-active");
+
+      console.log(headerSearch.classList.add("search-active"))
+    }
+
+    closeIcon.onclick = () => {
+      headerSearch.classList.remove("search-active");
+    }
+  </script>
 </body>
 
 </html>
