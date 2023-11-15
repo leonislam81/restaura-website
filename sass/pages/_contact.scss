@@ -1,12 +1,12 @@
 .contact-hero {
   background: linear-gradient(to bottom, #00000091, #000000a0),
-    url('../../asstes/contact-bg.jpg') center center no-repeat;
+    url('../asstes/contact-bg.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .reservation-form {
-  background: url('../../asstes/reservation-top.png'),
-    url('../../asstes/reservation-bottom.png');
+  background: url('../asstes/reservation-top.png'),
+    url('../asstes/reservation-bottom.png');
 
   background-position: top right, bottom left;
   background-size: auto, auto;

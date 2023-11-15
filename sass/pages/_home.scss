@@ -19,16 +19,16 @@
 
 .carousel-1 {
   background: linear-gradient(to bottom, #00000084, #000000a1),
-    url('../../asstes/carousel-01.jpg');
+    url('../asstes/carousel-01.jpg');
 }
 .carousel-2 {
   background: linear-gradient(to bottom, #00000084, #000000a1),
-    url('../../asstes/carousel-02.jpg');
+    url('../asstes/carousel-02.jpg');
 }
 
 .carousel-3 {
   background: linear-gradient(to bottom, #00000084, #000000a1),
-    url('../../asstes/carousel-03.jpg');
+    url('../asstes/carousel-03.jpg');
 }
 
 .carousel-box {
@@ -77,7 +77,7 @@
 
 //Restaruant History
 .history {
-  background: url('../../asstes/about-bg.jpg') top center no-repeat;
+  background: url('../asstes/about-bg.jpg') top center no-repeat;
   background-size: cover;
 }
 
@@ -140,7 +140,7 @@
 //Special Menu Section
 .special {
   background: linear-gradient(to right, #00000084, #000000a1),
-    url('../../asstes/banner.jpg') top center no-repeat fixed;
+    url('../asstes/banner.jpg') top center no-repeat fixed;
   background-size: cover;
 }
 
