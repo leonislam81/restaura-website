@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Site Title -->
+  <title>Contact</title>
+  <meta name="description" content="Responsive Bootstrap 5 Website" />
+  <meta name="keywords" content="Bootstrap 5, HTML5, CSS3, Restaurant Website, Restaurant" />
+  <meta name="author" content="leonislam.com" />
+
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="./asstes/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap v5.3 CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-md">
+        <a class="navbar-brand header-logo" href="index.html"><img class="w-50" src="./asstes/logo-squre2.png"
+            alt="Logo"></a>
+        <button class="navbar-toggler header__nav-icon" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mt-3 mt-lg-0 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link header-nav__link text-uppercase fw-medium active" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-nav__link fw-medium text-uppercase" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-nav__link fw-medium text-uppercase" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- CONTACT HERO SECTION -->
+  <section class="contact-hero py-5">
+    <div class="container-md py-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center text-white fw-bold">Contact Us</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT HERO SECTION END -->
+
+  <!-- TABLE RESERVATION FORM -->
+  <section class="reservation-form py-5">
+    <div class="container-md py-md-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Book A Table</h2>
+          <p class="text-center">Some Trendy And Popular Courses Offerd</p>
+        </div>
+      </div>
+      <form class="row mt-2 mt-sm-4 w-75 mx-auto g-3" id="form">
+        <div class="col-md-6">
+          <input type="text" class="form-control border-1 rounded-0 py-2 px-2" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control border-1 rounded-0 py-2 px-2" id="email" placeholder="Email Address">
+        </div>
+        <div class="col-md-6">
+          <input type="tel" class="form-control border-1 rounded-0 py-2 px-2" id="phone" placeholder="Telephone Number">
+        </div>
+        <div class="col-md-6">
+          <select class="form-select border-1 rounded-0 py-2 px-2" aria-label="Default select example">
+            <option selected>Number of Guests</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group flex-nowrap">
+            <input type="date" class="form-control border-1 rounded-0 py-2 px-2" placeholder="Username"
+              aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <select class="form-select border-1 rounded-0 py-2 px-2" aria-label="Default select example">
+            <option selected>Time</option>
+            <option value="1">Breakfast</option>
+            <option value="2">Lunch</option>
+            <option value="3">Dinner</option>
+          </select>
+        </div>
+        <div class="col-12 mt-4 text-center">
+          <button type="submit" class="btn rounded-0 reservation-btn text-uppercase">submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- TABLE RESERVATION FORM END -->
+
+  <!-- GOOGLE MAP INTEGRATE -->
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58455.72968834095!2d90.35108944082741!3d23.69443609914876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b91585b9fa1d%3A0xda7d4fd3ecaad478!2sSouth%20Keraniganj%2C%20Keraniganj!5e0!3m2!1sen!2sbd!4v1699996184948!5m2!1sen!2sbd"
+      width="100%" height="450" style="border:0; margin-bottom: -10px;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer position-sm-fixed bottom-0 w-100 pt-4 pt-md-5 pb-2">
+    <div class="container-md pt-md-5">
+      <div class="row flex-wrap gap-4 gap-sm-0">
+        <div class="col-12 col-md-4 col-lg-3">
+          <a href="index.html">
+            <img src="./asstes/logo-footer.png" alt="Footer Logo" class="img-fluid mb-3">
+          </a>
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50"><i
+                  class="bi me-1 bi-geo-alt-fill"></i> 51
+                Francis Street,
+                Darlinghurst
+                NSW 2010, United States</a></li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50"><i
+                  class="bi me-1 bi-telephone-fill"></i>
+                +61
+                1900 654 368</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50"><i
+                  class="bi me-1 bi-envelope-check-fill"></i>
+                demo@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <h4 class="footer-link__heading text-uppercase mb-sm-3 text-white">Opening Time</h4>
+          <div class="footer-time-wrap d-flex flex-column gap-4">
+            <div class="footer-opening">
+              <p class="footer-opening__date text-white-50 mb-0">Saturday- Sunday</p>
+              <p class="footer-opening__time mb-0 text-white-50"><span class="footer__highlight">10:00</span> Am - <span
+                  class="footer__highlight">11:00</span> PM</p>
+            </div>
+            <div class="footer-opening">
+              <p class="footer-opening__date mb-0 text-white-50">Saturday- Sunday</p>
+              <p class="footer-opening__time mb-0 text-white-50"><span class="footer__highlight">10:00</span> Am - <span
+                  class="footer__highlight">11:00</span> PM</p>
+            </div>
+            <div class="footer-opening">
+              <p class="footer-opening__date mb-0 text-white-50">Saturday- Sunday</p>
+              <p class="footer-opening__time mb-0 text-white-50"><span class="footer__highlight">10:00</span> Am - <span
+                  class="footer__highlight">11:00</span> PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <h4 class="footer-link__heading text-white text-uppercase mb-sm-3">THE MENU</h4>
+          <ul class="nav flex-column gap-2">
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Speacial Items</a></li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Fresh Breakfast</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Lunch Menu</a></li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Dinner Items</a></li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Fresh Food Zone</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">We Offerd Food</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 mt-md-4 mt-lg-0 col-lg-3">
+          <h4 class="footer-link__heading text-white text-uppercase mb-sm-3">NEWSLETTER</h4>
+          <p class="footer__newsletter-text text-white-50">Don’t miss any updates all the astonishing offers we bring
+            for you.</p>
+          <form action="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control footer-input" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <button type="submit" class="btn footer-submit text-uppercase">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <hr class="text-white my-4 my-md-5">
+      <div class="row align-items-center">
+        <div class="col col-sm-6 text-center text-sm-start text-capitalize text-white">© 2023 All Reverse</div>
+        <div class="col col-sm-6 text-end">
+          <a href="#" class="me-2 text-decoration-none">
+            <i class="bi bi-facebook fs-4"></i>
+          </a>
+          <a href="#" class="me-2 text-decoration-none">
+            <i class="bi bi-twitter fs-4"></i>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

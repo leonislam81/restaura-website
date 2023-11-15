@@ -1,0 +1,15 @@
+//For Heading
+@mixin heading($fontSize, $color) {
+  font-family: $primary-font;
+  font-size: $fontSize;
+
+  color: $color;
+}
+
+//For Text
+@mixin text($fontSize, $color) {
+  font-family: $primary-font;
+  font-size: $fontSize;
+
+  color: $color;
+}

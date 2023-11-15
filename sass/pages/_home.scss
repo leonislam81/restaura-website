@@ -1,0 +1,310 @@
+// Hero Section
+
+.home-carousel {
+  width: 100%;
+}
+
+.carousle-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 70vh;
+}
+
+.carousel-1 {
+  background: linear-gradient(to bottom, #00000084, #000000a1),
+    url('../../asstes/carousel-01.jpg');
+}
+.carousel-2 {
+  background: linear-gradient(to bottom, #00000084, #000000a1),
+    url('../../asstes/carousel-02.jpg');
+}
+
+.carousel-3 {
+  background: linear-gradient(to bottom, #00000084, #000000a1),
+    url('../../asstes/carousel-03.jpg');
+}
+
+.carousel-box {
+  max-width: 600px;
+  margin: auto;
+}
+
+.carousel__sub-heading {
+  @include heading(1.125rem, $primary-color);
+}
+
+.carousel__heading {
+  @include heading(1.5rem, #fff);
+}
+
+.carousel__btn {
+  @include text(1rem, #fff);
+  padding: 12px 24px;
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+  }
+}
+
+.carousel-control-prev {
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: none;
+}
+.carousel-control-next {
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: none;
+}
+
+// Hero Section End
+
+//Restaruant History
+.history {
+  background: url('../../asstes/about-bg.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+.history__heading {
+  @include heading(1.5rem, $heading-color);
+}
+
+.blockquote {
+  @include text(1rem, #282b2e);
+
+  i {
+    color: $primary-color;
+  }
+}
+
+.history__paragraph {
+  @include text(1rem, rgba(50, 51, 51, 0.8));
+}
+
+.history__btn {
+  @include text(0.875rem, #fff);
+  background-color: $primary-color;
+  padding: 12px 24px;
+  border: 2px solid $primary-color;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+}
+
+//Restaruant History End
+
+//Offer Section
+.offer-card {
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
+}
+.card-image {
+  max-width: 99px;
+  object-fit: cover;
+  margin: auto;
+}
+.offer__title {
+  transition: all 0.3s ease-out;
+}
+.offer-card:hover .offer__title {
+  color: $primary-color;
+}
+.offer__text {
+  @include text(1rem, rgba(33, 39, 57, 0.7));
+}
+//Offer Section End
+
+//Special Menu Section
+.special {
+  background: linear-gradient(to right, #00000084, #000000a1),
+    url('../../asstes/banner.jpg') top center no-repeat fixed;
+  background-size: cover;
+}
+
+.special-menu__header {
+  @include heading(1.5rem, #fff);
+}
+
+.tab-nav-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  transition: all 0.3s ease-out;
+}
+
+.menu-tab .active::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid $primary-color;
+}
+.menu-tab .active {
+  background-color: transparent !important;
+  border: 1px solid $primary-color !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.special-tab-wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.special-tab-box {
+  flex-grow: 1;
+  flex-basis: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.special-tab-box:hover .special-box-img img {
+  transform: scale(1.2);
+}
+
+.special-tab-box:hover figcaption::before {
+  background-color: rgba(185, 141, 54, 0.65);
+}
+
+.special-tab-box:hover .special-tab-content {
+  bottom: 15%;
+  left: 10%;
+}
+
+.special-box-img {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+  }
+  figcaption::before {
+    content: '';
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), #1c1a1d);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+  }
+}
+
+.special-tab-content {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  transition: all 0.3s linear;
+}
+
+.special-tab-content__heading {
+  @include heading(24px, #fff);
+}
+
+.special-tab-content__text {
+  @include text(16px, $primary-color);
+}
+//Special Menu Section End
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  // Hero Section
+  .carousle-wrap {
+    min-height: 80vh;
+  }
+  .carousel__sub-heading {
+    font-size: 1.5rem;
+  }
+  .carousel__heading {
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  .carousel-control-prev {
+    display: block;
+  }
+  .carousel-control-next {
+    display: block;
+  }
+  // Hero Section end
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  // Hero Section
+  .carousel__heading {
+    font-size: 48px;
+  }
+  .carousel__paragraph {
+    font-size: 1.125rem;
+  }
+  // Hero Section End
+
+  //Restaruant History
+  .history__heading {
+    font-size: 42px;
+  }
+  //Restaruant History End
+}
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  // Hero Section
+  .carousle-wrap {
+    min-height: calc(100vh - 90px);
+  }
+  .carousel__heading {
+    font-size: 56px;
+  }
+  // Hero Section End
+
+  //Restaruant History
+  .history__heading {
+    font-size: 52px;
+  }
+  .blockquote {
+    font-size: 18px;
+  }
+  //Restaruant History End
+
+  .special-tab-box {
+    flex-basis: 500px;
+  }
+}

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Site Title -->
+  <title>Restaura</title>
+  <meta name="description" content="Responsive Bootstrap 5 Website" />
+  <meta name="keywords" content="Bootstrap 5, HTML5, CSS3, Restaurant Website, Restaurant" />
+  <meta name="author" content="leonislam.com" />
+
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="./asstes/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap v5.3 CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/2c369df206.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-md">
+        <a class="navbar-brand header-logo" href="index.html"><img class="w-50" src="./asstes/logo-squre2.png"
+            alt="Logo"></a>
+        <button class="navbar-toggler header__nav-icon" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mt-3 mt-lg-0 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link header-nav__link text-uppercase fw-medium active" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-nav__link fw-medium text-uppercase" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-nav__link fw-medium text-uppercase" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="header-search">
+            <input type="text" class="shadow-sm" name="search" id="search" placeholder="Type Something...">
+            <div class="search-icon">
+              <i class="bi bi-search fw-bold"></i>
+            </div>
+            <div class="close-icon">
+              <i class="bi bi-x-lg fw-bold"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- HOME PAGE CAROUSEL -->
+  <section class="home-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+          class="active carousel__arrow" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousle-wrap carousel-1">
+            <div class="carousel-box text-center">
+              <h5 class="text-center carousel__sub-heading mb-lg-3">High Quality Test Station</h5>
+              <h2 class="text-center mb-3 carousel__heading">Choosing The Best Quality Food</h2>
+              <p class="text-center text-white carousel__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do
+                eiusmod tempor
+                incididunt ut
+                labore et dolore magna
+                aliqua.</p>
+              <a href="menu.html" class="btn text-uppercase carousel__btn mt-lg-4">Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousle-wrap carousel-2">
+            <div class="carousel-box text-center">
+              <h5 class="text-center carousel__sub-heading mb-lg-3">The Best Food Stations</h5>
+              <h2 class="text-center mb-3 carousel__heading">Where Food Meets Best Passion</h2>
+              <p class="text-center text-white carousel__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do
+                eiusmod tempor
+                incididunt ut
+                labore et dolore magna
+                aliqua.</p>
+              <a href="menu.html" class="btn text-uppercase carousel__btn mt-lg-4">Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousle-wrap carousel-3">
+            <div class="carousel-box text-center">
+              <h5 class="text-center carousel__sub-heading mb-lg-3">Exploring the Delicious World</h5>
+              <h2 class="text-center mb-3 carousel__heading">Delicious Eats And Tasty Drinks</h2>
+              <p class="text-center text-white carousel__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do
+                eiusmod tempor
+                incididunt ut
+                labore et dolore magna
+                aliqua.</p>
+              <a href="menu.html" class="btn text-uppercase mt-lg-4 carousel__btn">Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- HOME PAGE CAROUSEL END -->
+
+  <!-- RESTAURANT HISTORY -->
+  <section class="history py-5">
+    <div class="container-md py-lg-4">
+      <div class="row">
+        <div class="col-12 col-sm-8 col-lg-6">
+          <h2 class="history__heading">Restaurant History</h2>
+          <blockquote class="blockquote">
+            <p><i class="fa-solid fa-quote-left"></i> Accumsan quis, vulputate sit amet sapien. Curabitur euismod
+              vulputate nulla, non fringilla neque
+              condimentum
+              placerat.Integer egestas ullamcorper purus. <i class="fa-solid fa-quote-right"></i></p>
+          </blockquote>
+          <p class="history__paragraph">Pellentesque habitant morbi tristique senectus netus et malesuada fames turpis
+            egestas. Vestibulum tortor quam, feugiat
+            vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+            mi vitae
+            est. Mauris Eonec eu ribero sit amet quam egestas semper. Aenean are ultricies mi vitae est tristique
+            senectus et netus
+            et malesuada placerat leo.</p>
+          <a href="menu.html" class="btn history__btn text-uppercase">Check Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RESTAURANT HISTORY END -->
+
+  <!-- OFFER SECTION -->
+  <section class="offer py-5">
+    <div class="container-md py-lg-4">
+      <div class="row gap-4 gap-sm-0">
+        <div class="col-12 col-sm-4">
+          <div class="card px-xxl-5 text-center border-0 py-3 offer-card">
+            <img src="./asstes/about-icon2.png" class="card-image" alt="Icon">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold text-uppercase offer__title">DELICIOUS FOOD</h5>
+              <p class="card-text offer__text">Beetroot water spinach okra water chestnut ricebean pea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="card px-xxl-5 text-center border-0 py-3 offer-card">
+            <img src="./asstes/about-icon4.png" class="card-image" alt="Icon">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold text-uppercase offer__title">PROFESSIONAL SERVICE</h5>
+              <p class="card-text offer__text">Beetroot water spinach okra water chestnut ricebean pea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="card px-xxl-5 text-center border-0 py-3 offer-card">
+            <img src="./asstes/about-icon6.png" class="card-image" alt="Icon">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold text-uppercase offer__title">EXCELIENT MENU</h5>
+              <p class="card-text offer__text">Beetroot water spinach okra water chestnut ricebean pea.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- OFFER SECTION END -->
+
+  <!-- SPECIAL MENU -->
+  <section class="special py-5">
+    <div class="container-fluid py-md-5">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="special-menu__header text-capitalize text-center">Offerd Menu</h2>
+            <p class="special-menu__text text-center text-white-50 text-capitalize">Some Trendy And Popular Courses
+              Offerd</p>
+            <ul class="nav menu-tab gap-2 mt-5 justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link tab-nav-link text-white fw-semibold rounded-0 active" id="pills-speacial-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-speacial" type="button" role="tab"
+                  aria-controls="pills-speacial" aria-selected="true">Speacial</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link tab-nav-link text-white fw-semibold rounded-0" id="pills-breakfast-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-breakfast" type="button" role="tab"
+                  aria-controls="pills-breakfast" aria-selected="false">Breakfast</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link tab-nav-link text-white fw-semibold rounded-0" id="pills-lunch-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab"
+                  aria-controls="pills-lunch" aria-selected="false">Lunch</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link tab-nav-link text-white fw-semibold rounded-0" id="pills-dinner-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-dinner" type="button" role="tab"
+                  aria-controls="pills-dinner" aria-selected="false">Dinner</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link tab-nav-link text-white fw-semibold rounded-0" id="pills-drinks-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-drinks" type="button" role="tab"
+                  aria-controls="pills-drinks" aria-selected="false">Drinks</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content mt-5" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-speacial" role="tabpanel" aria-labelledby="pills-speacial-tab"
+          tabindex="0">
+          <div class="special-tab-wrap">
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/food image-01.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Pastry Dishes</h4>
+                <p class="special-tab-content__text">Italian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Soup.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Soup</h4>
+                <p class="special-tab-content__text">Indian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/stack.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Stack</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Burger.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Burger</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Subway.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Subway</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Kabab.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Kabab</h4>
+                <p class="special-tab-content__text">Bangladeshi Food</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab"
+          tabindex="0">
+          <div class="special-tab-wrap">
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/stack.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Stack</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/food image-01.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Pastry Dishes</h4>
+                <p class="special-tab-content__text">Italian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Soup.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Soup</h4>
+                <p class="special-tab-content__text">Indian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Burger.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Burger</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Subway.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Subway</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Kabab.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Kabab</h4>
+                <p class="special-tab-content__text">Bangladeshi Food</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabindex="0">
+          <div class="special-tab-wrap">
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Soup.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Soup</h4>
+                <p class="special-tab-content__text">Indian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/stack.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Stack</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Burger.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Burger</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/food image-01.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Pastry Dishes</h4>
+                <p class="special-tab-content__text">Italian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Subway.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Subway</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Kabab.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Kabab</h4>
+                <p class="special-tab-content__text">Bangladeshi Food</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab" tabindex="0">
+          <div class="special-tab-wrap">
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Soup.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Soup</h4>
+                <p class="special-tab-content__text">Indian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/stack.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Stack</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/food image-01.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Pastry Dishes</h4>
+                <p class="special-tab-content__text">Italian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Burger.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Burger</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Subway.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Subway</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Kabab.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Kabab</h4>
+                <p class="special-tab-content__text">Bangladeshi Food</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab" tabindex="0">
+          <div class="special-tab-wrap">
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Soup.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Soup</h4>
+                <p class="special-tab-content__text">Indian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/food image-01.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Pastry Dishes</h4>
+                <p class="special-tab-content__text">Italian Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/stack.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Stack</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Burger.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Burger</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Kabab.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Kabab</h4>
+                <p class="special-tab-content__text">Bangladeshi Food</p>
+              </div>
+            </div>
+            <div class="special-tab-box">
+              <figure class="special-box-img">
+                <img src="./asstes/Subway.jpg" class="img-fluid" alt="Food Image">
+                <figcaption></figcaption>
+              </figure>
+              <div class="special-tab-content">
+                <h4 class="text-white mb-0 special-tab-content__heading fw-semibold">Subway</h4>
+                <p class="special-tab-content__text">American Food</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SPECIAL MENU END -->
+
+  <!-- FOOTER -->
+  <footer class="footer bottom-0 w-100 pt-4 pt-md-5 pb-2">
+    <div class="container-md pt-md-5">
+      <div class="row flex-wrap gap-4 gap-sm-0">
+        <div class="col-12 col-md-4 col-lg-3">
+          <a href="index.html">
+            <img src="./asstes/logo-footer.png" alt="Footer Logo" class="img-fluid mb-3">
+          </a>
+          <ul class="nav">
+            <li class="nav-item"><a href="https://maps.app.goo.gl/o5EjXLoyL9Vr4xHv8"
+                class="nav-link footer-nav__link text-white-50"><i class="bi me-1 bi-geo-alt-fill"></i> 51
+                South Keraniganj, Keraniganj, Bangladesh, Khajurbag School Rd, Dhaka</a></li>
+            <li class="nav-item"><a href="tel:+611900654368" class="nav-link footer-nav__link text-white-50"><i
+                  class="bi me-1 bi-telephone-fill"></i>
+                +61
+                1900 654 368</a>
+            </li>
+            <li class="nav-item"><a href="mailto:demo@gmail.com" class="nav-link footer-nav__link text-white-50"><i
+                  class="bi me-1 bi-envelope-check-fill"></i>
+                demo@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <h4 class="footer-link__heading text-uppercase mb-sm-3 text-white">Opening Time</h4>
+          <div class="footer-time-wrap d-flex flex-column gap-4">
+            <div class="footer-opening">
+              <p class="footer-opening__date text-white-50 mb-0">Saturday- Sunday</p>
+              <p class="footer-opening__time mb-0 text-white-50"><span class="footer__highlight">10:00</span> Am - <span
+                  class="footer__highlight">11:00</span> PM</p>
+            </div>
+            <div class="footer-opening">
+              <p class="footer-opening__date mb-0 text-white-50">Saturday- Sunday</p>
+              <p class="footer-opening__time mb-0 text-white-50"><span class="footer__highlight">10:00</span> Am - <span
+                  class="footer__highlight">11:00</span> PM</p>
+            </div>
+            <div class="footer-opening">
+              <p class="footer-opening__date mb-0 text-white-50">Saturday- Sunday</p>
+              <p class="footer-opening__time mb-0 text-white-50"><span class="footer__highlight">10:00</span> Am - <span
+                  class="footer__highlight">11:00</span> PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <h4 class="footer-link__heading text-white text-uppercase mb-sm-3">THE MENU</h4>
+          <ul class="nav flex-column gap-2">
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Speacial Items</a></li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Fresh Breakfast</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Lunch Menu</a></li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Dinner Items</a></li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">Fresh Food Zone</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link footer-nav__link text-white-50 p-0">We Offerd Food</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 mt-md-4 mt-lg-0 col-lg-3">
+          <h4 class="footer-link__heading text-white text-uppercase mb-sm-3">NEWSLETTER</h4>
+          <p class="footer__newsletter-text text-white-50">Don’t miss any updates all the astonishing offers we bring
+            for you.</p>
+          <form action="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control footer-input" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <button type="submit" class="btn footer-submit text-uppercase">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <hr class="text-white my-4 my-md-5">
+      <div class="row align-items-center">
+        <div class="col col-sm-6 text-center text-sm-start text-capitalize text-white">© 2023 All Reverse</div>
+        <div class="col col-sm-6 text-end">
+          <a href="#" class="me-2 text-decoration-none">
+            <i class="bi bi-facebook fs-4"></i>
+          </a>
+          <a href="#" class="me-2 text-decoration-none">
+            <i class="bi bi-twitter fs-4"></i>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    const headerSearch = document.querySelector(".header-search");
+    const searchIcon = document.querySelector(".search-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
+    searchIcon.onclick = () => {
+      headerSearch.classList.add("search-active");
+
+      console.log(headerSearch.classList.add("search-active"))
+    }
+
+    closeIcon.onclick = () => {
+      headerSearch.classList.remove("search-active");
+    }
+  </script>
+</body>
+
+</html>
