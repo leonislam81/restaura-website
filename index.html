@@ -29,6 +29,9 @@
 
 <body>
 
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader"></div>
+
   <!-- HEADER -->
   <header class="header">
     <nav class="navbar navbar-expand-md">
@@ -664,6 +667,7 @@
     const headerSearch = document.querySelector(".header-search");
     const searchIcon = document.querySelector(".search-icon");
     const closeIcon = document.querySelector(".close-icon");
+    const preloader = document.querySelector("#preloader");
 
     searchIcon.onclick = () => {
       headerSearch.classList.add("search-active");
@@ -674,6 +678,10 @@
     closeIcon.onclick = () => {
       headerSearch.classList.remove("search-active");
     }
+
+    window.addEventListener("load", () => {
+      preloader.style.display = "none";
+    });
   </script>
 </body>
 

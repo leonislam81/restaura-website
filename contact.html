@@ -25,6 +25,9 @@
 
 <body>
 
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader"></div>
+
   <!-- HEADER -->
   <header class="header">
     <nav class="navbar navbar-expand-md">
@@ -39,14 +42,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mt-3 mt-lg-0 ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link header-nav__link text-uppercase fw-medium active" aria-current="page"
+              <a class="nav-link header-nav__link text-uppercase fw-medium" aria-current="page"
                 href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link header-nav__link fw-medium text-uppercase" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link header-nav__link fw-medium text-uppercase" href="contact.html">Contact</a>
+              <a class="nav-link header-nav__link fw-medium text-uppercase active" href="contact.html">Contact</a>
             </li>
           </ul>
           <div class="header-search">
@@ -232,6 +235,7 @@
     const headerSearch = document.querySelector(".header-search");
     const searchIcon = document.querySelector(".search-icon");
     const closeIcon = document.querySelector(".close-icon");
+    const preloader = document.querySelector("#preloader");
 
     searchIcon.onclick = () => {
       headerSearch.classList.add("search-active");
@@ -242,6 +246,10 @@
     closeIcon.onclick = () => {
       headerSearch.classList.remove("search-active");
     }
+
+    window.addEventListener("load", () => {
+      preloader.style.display = "none";
+    });
   </script>
 </body>
 

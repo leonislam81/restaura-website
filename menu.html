@@ -25,6 +25,9 @@
 
 <body>
 
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader"></div>
+
   <!-- HEADER -->
   <header class="header">
     <nav class="navbar navbar-expand-md">
@@ -39,11 +42,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mt-3 mt-lg-0 ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link header-nav__link text-uppercase fw-medium active" aria-current="page"
+              <a class="nav-link header-nav__link text-uppercase fw-medium" aria-current="page"
                 href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link header-nav__link fw-medium text-uppercase" href="menu.html">Menu</a>
+              <a class="nav-link header-nav__link fw-medium text-uppercase active" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link header-nav__link fw-medium text-uppercase" href="contact.html">Contact</a>
@@ -98,8 +101,48 @@
           <div class="card menu-card text-center pt-5 pb-2">
             <div class="menu-shawod z-0"></div>
             <div class="card-body z-1">
-              <img src="./asstes/pizza.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
-              <h4 class="menu-title fw-semibold">Pizza</h4>
+              <img src="./asstes/rice.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
+              <h4 class="menu-title fw-semibold">Rice</h4>
+              <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              <h5 class="menu-price fw-bold">$50.0</h5>
+              <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">Show Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+          <div class="card menu-card text-center pt-5 pb-2">
+            <div class="menu-shawod z-0"></div>
+            <div class="card-body z-1">
+              <img src="./asstes/Green Salad.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
+              <h4 class="menu-title fw-semibold">Green Salad</h4>
+              <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              <h5 class="menu-price fw-bold">$40.0</h5>
+              <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">Show Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+          <div class="card menu-card text-center pt-5 pb-2">
+            <div class="menu-shawod z-0"></div>
+            <div class="card-body z-1">
+              <img src="./asstes/Pasta.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
+              <h4 class="menu-title fw-semibold">Pasta</h4>
+              <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              <h5 class="menu-price fw-bold">$35.0</h5>
+              <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">Show Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+          <div class="card menu-card text-center pt-5 pb-2">
+            <div class="menu-shawod z-0"></div>
+            <div class="card-body z-1">
+              <img src="./asstes/pizza item.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
+              <h4 class="menu-title fw-semibold">Baked Pizza
+              </h4>
               <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
               <h5 class="menu-price fw-bold">$55.0</h5>
               <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
@@ -111,49 +154,10 @@
           <div class="card menu-card text-center pt-5 pb-2">
             <div class="menu-shawod z-0"></div>
             <div class="card-body z-1">
-              <img src="./asstes/pizza.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
-              <h4 class="menu-title fw-semibold">Pizza</h4>
+              <img src="./asstes/momos.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
+              <h4 class="menu-title fw-semibold">Momos</h4>
               <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-              <h5 class="menu-price fw-bold">$55.0</h5>
-              <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
-                data-bs-target="#exampleModal1">Show Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-          <div class="card menu-card text-center pt-5 pb-2">
-            <div class="menu-shawod z-0"></div>
-            <div class="card-body z-1">
-              <img src="./asstes/pizza.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
-              <h4 class="menu-title fw-semibold">Pizza</h4>
-              <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-              <h5 class="menu-price fw-bold">$55.0</h5>
-              <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
-                data-bs-target="#exampleModal1">Show Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-          <div class="card menu-card text-center pt-5 pb-2">
-            <div class="menu-shawod z-0"></div>
-            <div class="card-body z-1">
-              <img src="./asstes/pizza.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
-              <h4 class="menu-title fw-semibold">Pizza</h4>
-              <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-              <h5 class="menu-price fw-bold">$55.0</h5>
-              <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
-                data-bs-target="#exampleModal1">Show Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-          <div class="card menu-card text-center pt-5 pb-2">
-            <div class="menu-shawod z-0"></div>
-            <div class="card-body z-1">
-              <img src="./asstes/pizza.jpg" class="img-fluid menu-image shadow-sm mb-3 mx-auto" alt="Pizza">
-              <h4 class="menu-title fw-semibold">Pizza</h4>
-              <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-              <h5 class="menu-price fw-bold">$55.0</h5>
+              <h5 class="menu-price fw-bold">$50.0</h5>
               <a href="#" class="btn mt-2 text-uppercase fw-semibold menu-button" data-bs-toggle="modal"
                 data-bs-target="#exampleModal1">Show Details</a>
             </div>
@@ -385,6 +389,7 @@
     const headerSearch = document.querySelector(".header-search");
     const searchIcon = document.querySelector(".search-icon");
     const closeIcon = document.querySelector(".close-icon");
+    const preloader = document.querySelector("#preloader");
 
     searchIcon.onclick = () => {
       headerSearch.classList.add("search-active");
@@ -395,6 +400,10 @@
     closeIcon.onclick = () => {
       headerSearch.classList.remove("search-active");
     }
+
+    window.addEventListener("load", () => {
+      preloader.style.display = "none";
+    });
   </script>
 </body>
 
